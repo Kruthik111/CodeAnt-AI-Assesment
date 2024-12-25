@@ -1,0 +1,7 @@
+@import "../../index.css";
+
+.badge {
+  color: var(--primary);
+  background-color: var(--primary);
+  opacity: 0.67;
+}

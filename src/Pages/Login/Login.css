@@ -1,0 +1,150 @@
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  font-weight: bold;
+  background-color: var(--bg-color);
+}
+
+/* Left container */
+
+.left-container,
+.right-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.left-container {
+  background-color: white;
+  height: 100%;
+  padding: 0 2rem;
+  box-shadow: var(--shadow);
+}
+.left-container > img {
+  max-width: 80%;
+  width: 460px;
+}
+
+button {
+  cursor: pointer;
+}
+
+button:hover {
+  filter: brightness(95%);
+}
+.bg-logo {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  max-width: 17%;
+}
+/* Right container */
+
+#title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#title > h1 {
+  font-size: x-large;
+  font-weight: 300;
+}
+
+.greet {
+  font-size: 20px;
+  text-align: center;
+}
+
+.right-container {
+  margin-right: 20px;
+  flex-direction: column;
+  font-size: 20px;
+  gap: 15px;
+}
+.login-container {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  box-shadow: var(--shadow);
+  border-radius: 12px;
+  overflow: hidden;
+  width: 90%;
+  min-width: 326px;
+  max-width: 526px;
+}
+
+.login-container-top,
+.tab-container {
+  background-color: white;
+  padding: 30px;
+}
+
+.login-container-top {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+
+.top-buttons-layout {
+  display: flex;
+}
+.top-buttons-layout > button {
+  flex: 1;
+  font-weight: bold;
+  padding: 12px 4px;
+  border-radius: 6px;
+  border: none;
+}
+
+.activeBtn {
+  background-color: var(--primary);
+  color: white;
+  transition: all 400ms linear;
+}
+.inActiveBtn {
+  background-color: var(--bg-color);
+  box-shadow: var(--shadow);
+}
+.tab-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  min-height: 270px;
+  transition: all 400ms linear;
+}
+.login-btn {
+  padding: 12px 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  gap: 4px;
+  min-width: 80%;
+  background-color: white;
+  border: none;
+  box-shadow: var(--shadow);
+  border-radius: 4px;
+  font-weight: bold;
+  max-height: 43.5px;
+}
+
+#terms {
+  font-weight: normal;
+  font-size: 14px;
+}
+
+@media screen and (max-width: 920px) {
+  .container {
+    justify-content: center;
+  }
+  .right-container {
+    margin: 0;
+  }
+  .left-container {
+    display: none;
+  }
+}
