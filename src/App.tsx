@@ -1,7 +1,6 @@
 import { lazy } from "react";
 import { Route, Routes } from "react-router";
 import "./App.css";
-import CodeReview from "./Pages/CodeReview";
 import NotFound from "./Components/NotFound";
 
 // Lazy loading for faster loading
