@@ -68,50 +68,80 @@ const Sidebar: React.FC = () => {
             <ul>
               <div className="items">
                 <div className="items-top">
-                  <NavItems
-                    icon={<LiaHomeSolid size={25} />}
-                    text={"Repository"}
-                    selectedNav={selectedNav}
-                    navkey={1}
-                    setselectedNav={setselectedNav}
-                  />
-                  <NavItems
-                    icon={<IoCodeSlashOutline size={20} />}
-                    text={"AI Code Review"}
-                    selectedNav={selectedNav}
-                    navkey={2}
-                    setselectedNav={setselectedNav}
-                  />
-                  <NavItems
-                    icon={<IoIosCloudOutline size={20} />}
-                    text={"Cloud Security"}
-                    selectedNav={selectedNav}
-                    navkey={3}
-                    setselectedNav={setselectedNav}
-                  />
-                  <NavItems
-                    icon={<TbBook2 size={20} />}
-                    text={"How to Use"}
-                    selectedNav={selectedNav}
-                    navkey={4}
-                    setselectedNav={setselectedNav}
-                  />
-                  <NavItems
-                    icon={<GoGear size={20} />}
-                    text={"Settings"}
-                    selectedNav={selectedNav}
-                    navkey={6}
-                    setselectedNav={setselectedNav}
-                  />
+                  <Link
+                    to={"/repository"}
+                    style={{ color: "inherit", textDecoration: "inherit" }}
+                  >
+                    <NavItems
+                      icon={<LiaHomeSolid size={25} />}
+                      text={"Repository"}
+                      selectedNav={selectedNav}
+                      navkey={1}
+                      setselectedNav={setselectedNav}
+                    />
+                  </Link>
+                  <Link
+                    to={"/ai-code-review"}
+                    style={{ color: "inherit", textDecoration: "inherit" }}
+                  >
+                    <NavItems
+                      icon={<IoCodeSlashOutline size={20} />}
+                      text={"AI Code Review"}
+                      selectedNav={selectedNav}
+                      navkey={2}
+                      setselectedNav={setselectedNav}
+                    />
+                  </Link>
+                  <Link
+                    to={"/cloud-Security"}
+                    style={{ color: "inherit", textDecoration: "inherit" }}
+                  >
+                    <NavItems
+                      icon={<IoIosCloudOutline size={20} />}
+                      text={"Cloud Security"}
+                      selectedNav={selectedNav}
+                      navkey={3}
+                      setselectedNav={setselectedNav}
+                    />
+                  </Link>
+                  <Link
+                    to={"/how-to-use"}
+                    style={{ color: "inherit", textDecoration: "inherit" }}
+                  >
+                    <NavItems
+                      icon={<TbBook2 size={20} />}
+                      text={"How to Use"}
+                      selectedNav={selectedNav}
+                      navkey={4}
+                      setselectedNav={setselectedNav}
+                    />
+                  </Link>
+                  <Link
+                    to={"/settings"}
+                    style={{ color: "inherit", textDecoration: "inherit" }}
+                  >
+                    <NavItems
+                      icon={<GoGear size={20} />}
+                      text={"Settings"}
+                      selectedNav={selectedNav}
+                      navkey={6}
+                      setselectedNav={setselectedNav}
+                    />
+                  </Link>
                 </div>
                 <div className="items-top">
-                  <NavItems
-                    icon={<IoCallOutline size={20} />}
-                    text={"Support"}
-                    selectedNav={selectedNav}
-                    navkey={7}
-                    setselectedNav={setselectedNav}
-                  />
+                  <Link
+                    to={"/support"}
+                    style={{ color: "inherit", textDecoration: "inherit" }}
+                  >
+                    <NavItems
+                      icon={<IoCallOutline size={20} />}
+                      text={"Support"}
+                      selectedNav={selectedNav}
+                      navkey={7}
+                      setselectedNav={setselectedNav}
+                    />
+                  </Link>
                   <Link
                     to={"/"}
                     style={{ color: "inherit", textDecoration: "inherit" }}

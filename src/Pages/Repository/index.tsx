@@ -93,7 +93,7 @@ function Repository() {
   }, [projects, search]);
 
   return (
-    <div className="repo-container">
+    <div className="page-container repo-container">
       <div className="repo-container-top">
         <div className="repo-details">
           <h1 style={{ fontSize: "29px" }}>Repositories</h1>
