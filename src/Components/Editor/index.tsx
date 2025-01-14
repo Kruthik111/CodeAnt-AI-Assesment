@@ -1,7 +1,7 @@
 import EditorHeader from "./EditorHeader";
 import "./editor.css";
 
-const Editor = ({ theme = "dark" }) => {
+const Editor = () => {
   return (
     <div className="editor-container">
       <div>
